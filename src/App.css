@@ -1,65 +1,49 @@
 /* src/App.css */
-
-body {
-  background-color: #f4f4f4; /* Gris claro */
-  background-image: url('https://www.transparenttextures.com/patterns/white-diamond.png'); /* Textura sutil */
-  color: #333;
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 .App {
   text-align: center;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+  font-family: 'Roboto', Arial, sans-serif; /* Fuente más moderna */
+
+  background-color: #2c3e50; /* Fondo oscuro, pero moderno */
+  color: white; /* Color blanco para el texto en toda la app */
 }
 
-/* Mejorar la apariencia del main */
-main {
-  padding: 20px;
-}
-
-/* Tamaño y comportamiento del logo */
 .App-logo {
   height: 30vmin;
   pointer-events: none;
+  transition: transform 0.3s ease-in-out; /* Transición suave al mover el logo */
 }
 
-/* Animación del logo */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear; /* Gira solo si no se ha reducido el movimiento */
   }
 }
 
 /* Encabezado del App */
 .App-header {
-  background-color: #282c34; /* Fondo oscuro */
+  background-color: #1a252f; /* Fondo más suave para el encabezado */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(10px + 2vmin); /* Ajuste dinámico del tamaño de fuente */
+  color: rgb(190, 7, 7);
+  padding: 20px; /* Espaciado adicional */
 }
 
-/* Enlaces del App */
 .App-link {
   color: #61dafb;
   text-decoration: none;
   transition: color 0.3s ease;
+  font-size: 1.2rem; /* Tamaño de fuente más grande para el enlace */
 }
 
 /* Hover en enlaces */
 .App-link:hover {
-  color: #21a1f1; /* Color más brillante para el hover */
+  color: #21a1f1; /* Brillo más intenso en el hover */
 }
 
-/* Animación del logo */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

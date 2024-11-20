@@ -1,11 +1,82 @@
-/* src/components/Contact.css */
-.contact {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
+.contact-container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.contact-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-card h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contact-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.contact-email {
+  font-size: 18px;
+  color: #fff;
+  background-color: #007BFF;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-email:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.contact-email:focus {
+  outline: 2px solid #0056b3;
+  outline-offset: 4px;
+}
+
+.contact-email:active {
+  background-color: #003f7f;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 10px; /* Reduce padding on smaller screens */
   }
-  
-  .contact h2 {
-    font-size: 24px;
+
+  .contact-card {
+    max-width: 90%; /* Makes the card take 90% of the width on smaller screens */
+    padding: 20px; /* Adjust padding for smaller screens */
+    min-height: none;
   }
-  
+
+  .contact-card h2 {
+    font-size: 24px; /* Reduce font size for better readability on small screens */
+  }
+
+  .contact-card p {
+    font-size: 14px; /* Reduce font size for small screens */
+  }
+
+  .contact-email {
+    font-size: 16px; /* Adjust button size for mobile */
+    padding: 10px 15px; /* Adjust padding for better mobile experience */
+  }
+}

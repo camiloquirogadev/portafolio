@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Header.css'; // Importa los estilos
+import './header.css'; // Importa los estilos
 
 const Header = () => {
   // Estado para el menú hamburguesa
@@ -34,9 +34,6 @@ const Header = () => {
 
       {/* Menú de navegación */}
       <ul className={menuOpen ? 'active' : ''}>
-        <li><button onClick={() => scrollToSection('about')}>About</button></li>
-        <li><button onClick={() => scrollToSection('skills')}>Skills</button></li>
-        <li><button onClick={() => scrollToSection('projects')}>Projects</button></li>
         <li><button onClick={() => scrollToSection('contact')}>Contact</button></li>
       </ul>
     </header>
