@@ -26,14 +26,18 @@ const Header = () => {
       </div>
 
       {/* Menú hamburguesa */}
-      <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+      <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu} aria-label="Toggle navigation">
         <div></div>
         <div></div>
         <div></div>
       </div>
 
+
       {/* Menú de navegación */}
       <ul className={menuOpen ? 'active' : ''}>
+        <li><button onClick={() => scrollToSection('about')}>About</button></li>
+        <li><button onClick={() => scrollToSection('skills')}>Skills</button></li>
+        <li><button onClick={() => scrollToSection('projects')}>Projects</button></li>
         <li><button onClick={() => scrollToSection('contact')}>Contacto</button></li>
       </ul>
     </header>

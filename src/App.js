@@ -7,8 +7,7 @@ import './App.css'; // Estilos
 function App() {
   return (
     <div className="App">
-      <Header />
-
+      <Header />   
       <Contact /> 
     </div>
   );

@@ -1,5 +1,4 @@
 /* Estilos generales para el header */
-
 header {
   background-color: #2c3e50; /* Un tono oscuro de azul */
   padding: 20px 0;
@@ -34,7 +33,7 @@ header {
   .logo {
     font-size: 18px; /* Tamaño ligeramente más pequeño para móviles */
     text-align: center; /* Centrar el logo en dispositivos móviles */
-    margin-left: 6; /* Eliminar cualquier margen izquierdo */
+    margin-left: 0; /* Eliminar cualquier margen izquierdo */
   }
 }
 
@@ -100,7 +99,8 @@ section p {
   width: 30px;
   height: 25px;
   cursor: pointer;
-  
+  z-index: 2;
+  transition: transform 0.3s ease; /* Transición para animar el cambio */
 }
 
 .hamburger div {
@@ -108,7 +108,7 @@ section p {
   background-color: #ecf0f1;
   border-radius: 5px;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  margin-right: 4px; 
+  margin-right: 4px;
 }
 
 /* Estilos para el menú en dispositivos móviles */
@@ -125,6 +125,7 @@ section p {
     align-items: flex-end;
     border-radius: 8px;
     width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   /* Mostrar el menú cuando el estado es "activo" */
