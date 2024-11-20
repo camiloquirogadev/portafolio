@@ -34,7 +34,7 @@ const Header = () => {
 
       {/* Menú de navegación */}
       <ul className={menuOpen ? 'active' : ''}>
-        <li><button onClick={() => scrollToSection('contact')}>Contact</button></li>
+        <li><button onClick={() => scrollToSection('contact')}>Contacto</button></li>
       </ul>
     </header>
   );
