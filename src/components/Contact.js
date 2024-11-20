@@ -9,7 +9,7 @@ function Contact() {
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <div className="contact-container">
+    <div id="contact" className="contact-container">
       <div className="contact-card">
         <h2 className="contact-title">Contáctame</h2>
         <p className="contact-description">

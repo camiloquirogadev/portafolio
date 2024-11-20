@@ -1,13 +1,15 @@
-.contact-container { 
+/* .contact-container */
+.contact-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #34495e;
-  padding: 20px;
+  min-height: 100vh; 
+  background-image: url(/public/assets/5399714.jpg);/* Asegura que el contenedor tenga la altura completa de la pantalla */
 }
 
+/* .contact-card */
 .contact-card {
-  background-color: #fff;
+  background-color: rgba(236, 240, 241, 0.9); /* Fondo semi-transparente para mayor contraste */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -32,14 +34,14 @@
 /* Estilo general de los botones */
 .contact-button {
   font-size: 18px;
-  color: #fff;
+  color: #ecf0f1;
   text-decoration: none;
   padding: 12px 20px;
   border-radius: 5px;
   display: inline-block;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 /* Botón de Calendly */
@@ -83,25 +85,24 @@
 /* Media Query */
 @media (max-width: 768px) {
   .contact-container {
-    padding: 10px; /* Reduce padding on smaller screens */
+    padding: 10px; /* Reduce padding en pantallas más pequeñas */
   }
 
   .contact-card {
-    max-width: 90%; /* Makes the card take 90% of the width on smaller screens */
-    padding: 20px; /* Adjust padding for smaller screens */
-    min-height: none;
+    max-width: 90%; /* Hace que la tarjeta ocupe el 90% del ancho en pantallas pequeñas */
+    padding: 20px; /* Ajusta el padding para pantallas más pequeñas */
   }
 
   .contact-card h2 {
-    font-size: 24px; /* Reduce font size for better readability on small screens */
+    font-size: 24px; /* Reduce el tamaño de la fuente para mejor lectura */
   }
 
   .contact-card p {
-    font-size: 14px; /* Reduce font size for small screens */
+    font-size: 14px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
   }
 
   .contact-button {
-    font-size: 16px; /* Adjust button size for mobile */
-    padding: 10px 15px; /* Adjust padding for better mobile experience */
+    font-size: 16px; /* Ajusta el tamaño del texto en los botones */
+    padding: 10px 15px; /* Ajusta el padding para una mejor experiencia móvil */
   }
 }

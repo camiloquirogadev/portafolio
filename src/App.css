@@ -2,8 +2,6 @@
 .App {
   text-align: center;
   font-family: 'Roboto', Arial, sans-serif; /* Fuente más moderna */
-
-  background-color: #2c3e50; /* Fondo oscuro, pero moderno */
   color: white; /* Color blanco para el texto en toda la app */
 }
 

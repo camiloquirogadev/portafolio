@@ -1,6 +1,6 @@
 /* Estilos generales para el header */
 header {
-  background-color: #2c3e50; /* Un tono oscuro de azul */
+  background-color: #3e5c5b;
   padding: 20px 0;
   display: flex;
   justify-content: space-between; /* Asegura que el logo y los botones se alineen correctamente */
@@ -19,13 +19,14 @@ header {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave para darle profundidad */
   cursor: pointer; /* Para que se pueda hacer clic si es necesario */
   transition: color 0.3s ease, transform 0.3s ease;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 /* Efecto hover para el logo */
 .logo:hover {
-  color: #3498db; /* Azul brillante cuando se pasa el ratón */
-  transform: scale(1.1); /* Agranda ligeramente el logo para el efecto */
+  color: #7db1b1; /* Azul verdoso para el hover */
+  transform: scale(1.1);
+  
 }
 
 /* Estilos en dispositivos móviles */
@@ -33,7 +34,7 @@ header {
   .logo {
     font-size: 18px; /* Tamaño ligeramente más pequeño para móviles */
     text-align: center; /* Centrar el logo en dispositivos móviles */
-    margin-left: 0; /* Eliminar cualquier margen izquierdo */
+    margin-left: 25px; /* Eliminar cualquier margen izquierdo */
   }
 }
 
@@ -44,7 +45,7 @@ ul {
   width: 80%;
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin-right: 30px;
 }
 
 /* Estilo para cada ítem del menú */
@@ -65,7 +66,7 @@ button {
 
 /* Hover para los botones */
 button:hover {
-  background-color: #3498db; /* Azul brillante cuando se pasa el ratón */
+  background-color: #7db1b1e3; /* Azul verdoso */
   color: #fff;
   transform: scale(1.1);
 }
@@ -100,7 +101,8 @@ section p {
   height: 25px;
   cursor: pointer;
   z-index: 2;
-  transition: transform 0.3s ease; /* Transición para animar el cambio */
+  transition: transform 0.3s ease;
+  margin-right: 25px; /* Transición para animar el cambio */
 }
 
 .hamburger div {
@@ -108,7 +110,7 @@ section p {
   background-color: #ecf0f1;
   border-radius: 5px;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  margin-right: 4px;
+  margin-right: 5px;
 }
 
 /* Estilos para el menú en dispositivos móviles */
@@ -117,14 +119,16 @@ section p {
   ul {
     display: none;
     position: absolute;
-    top: 70px;
+    top: 75px;
     right: 20px;
-    background-color: #2c3e50;
+    background-color: #3e5c5bec;
     padding: 20px;
     flex-direction: column;
     align-items: flex-end;
     border-radius: 8px;
     width: 200px;
+    margin: 0;
+    margin-right: 11px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
