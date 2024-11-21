@@ -1,0 +1,90 @@
+/* Contenedor principal de la sección de servicios */
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #1a252f, #3e5c5b);
+    padding: 40px;
+  }
+  
+  /* Contenido de los servicios */
+  .services-content {
+    text-align: center;
+    color: #ecf0f1;
+    max-width: 1000px;
+    padding: 20px;
+  }
+  
+  /* Título de la sección */
+  .services-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #ecf0f1;
+    text-transform: uppercase;
+  }
+  
+  /* Contenedor de la lista de servicios */
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  /* Cada servicio individual */
+  .service-item {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para cada servicio */
+    border-radius: 10px;
+    padding: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Iconos de los servicios */
+  .service-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #61dafb;
+  }
+  
+  /* Títulos de los servicios */
+  .service-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ecf0f1;
+    margin-bottom: 10px;
+  }
+  
+  /* Descripción de los servicios */
+  .service-description {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #ddd;
+  }
+  
+  /* Efecto al pasar el mouse */
+  .service-item:hover {
+    transform: translateY(-10px); /* Mueve el servicio hacia arriba */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Agrega sombra al pasar el mouse */
+  }
+  
+  /* Media Query para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .services-list {
+      grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+  
+    .service-item {
+      padding: 20px;
+    }
+  
+    .service-title {
+      font-size: 1.6rem; /* Reducir el tamaño del título */
+    }
+  
+    .service-description {
+      font-size: 1rem; /* Reducir el tamaño de la descripción */
+    }
+  }
+  

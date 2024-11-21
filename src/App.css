@@ -50,3 +50,60 @@
     transform: rotate(360deg);
   }
 }
+/* Estilo por defecto para el modo claro */
+body {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Cambiar fondo y texto en otras secciones */
+body.dark-mode header {
+  background-color: #222;
+}
+
+body.dark-mode .about-container {
+  background-color: #1e1e1e; /* Fondo más oscuro en la sección About */
+}
+
+body.dark-mode .about-content {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con algo de transparencia */
+}
+
+body.dark-mode button {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .dark-mode-toggle {
+  background-color: #444;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+  background-color: #555;
+}
+
+/* Para textos en modo oscuro */
+body.dark-mode .about-title,
+body.dark-mode .about-text,
+body.dark-mode .about-description {
+  color: #fff;
+}
+
+body.dark-mode .skills-list li,
+body.dark-mode .skills-list li::before {
+  color: #ddd; /* Texto claro en habilidades/intereses */
+}
+
+/* Otras personalizaciones para diferentes componentes cuando esté en modo oscuro */
+body.dark-mode .footer {
+  background-color: #222;
+}

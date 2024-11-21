@@ -1,6 +1,6 @@
 /* Estilo general para el footer */
-.footer {
-    background-color: #3e5c5b; /* Fondo oscuro */
+.footer {  
+  background-color: #3e5c5b;
     color: #ecf0f1; /* Texto claro */
     padding: 20px 0;
     text-align: center;
@@ -30,7 +30,7 @@
   
   .footer-links a {
     text-decoration: none;
-    color: #3498db; /* Azul claro para los enlaces */
+    color: #7db1b1;
     transition: color 0.3s ease;
   }
   

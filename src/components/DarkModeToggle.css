@@ -1,0 +1,31 @@
+.dark-mode-toggle {
+    background-color:#3e5c5b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dark-mode-toggle:hover {
+    background-color: #555;
+  }
+  
+  body.dark-mode {
+    background-color: #121212; /* Fondo oscuro */
+    color: #fff; /* Texto blanco para el modo oscuro */
+  }
+  
+  /* Puedes agregar más reglas de estilo para otros elementos cuando esté en modo oscuro */
+  body.dark-mode header {
+    background-color: #222; /* Fondo oscuro en el header */
+  }
+  
+  body.dark-mode .about-container {
+    background-image: url('/public/assets/5399714.jpg'); /* Fondo oscuro o diferente */
+  }
+  
+  /* Y más estilos personalizados para el modo oscuro */
+  

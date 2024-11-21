@@ -11,9 +11,9 @@ function Contact() {
   return (
     <div id="contact" className="contact-container">
       <div className="contact-card">
-        <h2 className="contact-title">Contáctame</h2>
+        <h2 className="contact-title">Contact me</h2>
         <p className="contact-description">
-          Si deseas ponerte en contacto o agendar una reunión, utiliza los enlaces a continuación:
+        If you would like to get in touch or schedule a meeting, please use the links below:
         </p>
         <div className="contact-buttons">
           <a
@@ -31,7 +31,7 @@ function Contact() {
             rel="noopener noreferrer"
             className="contact-button calendly"
           >
-            Agendar reunión
+            Schedule Meeting
           </a>
         </div>
       </div>

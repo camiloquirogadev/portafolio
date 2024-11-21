@@ -3,16 +3,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; 
-  background-image: url(/public/assets/5399714.jpg);/* Asegura que el contenedor tenga la altura completa de la pantalla */
+  min-height: 100vh;
+  background-image: url(/public/assets/5399714.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 /* .contact-card */
 .contact-card {
-  background-color: rgba(236, 240, 241, 0.9); /* Fondo semi-transparente para mayor contraste */
   padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para cada servicio */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 450px;
   text-align: center;
@@ -21,13 +22,13 @@
 
 .contact-card h2 {
   font-size: 28px;
-  color: #333;
+  color: #ecf0f1;
   margin-bottom: 15px;
 }
 
 .contact-card p {
   font-size: 16px;
-  color: #555;
+  color: #ddd;
   margin-bottom: 25px;
 }
 
@@ -40,8 +41,9 @@
   border-radius: 5px;
   display: inline-block;
   font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 10px;
+  border: none; /* Elimina borde por defecto */
 }
 
 /* Botón de Calendly */
@@ -52,6 +54,7 @@
 .contact-button.calendly:hover {
   background-color: #0056b3;
   transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra al hacer hover */
 }
 
 .contact-button.calendly:focus {
@@ -71,6 +74,7 @@
 .contact-button.whatsapp:hover {
   background-color: #1ebe57;
   transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra al hacer hover */
 }
 
 .contact-button.whatsapp:focus {
@@ -104,5 +108,26 @@
   .contact-button {
     font-size: 16px; /* Ajusta el tamaño del texto en los botones */
     padding: 10px 15px; /* Ajusta el padding para una mejor experiencia móvil */
+  }
+}
+
+/* Media Query para pantallas muy pequeñas (como teléfonos) */
+@media (max-width: 480px) {
+  .contact-button {
+    font-size: 14px; /* Reduce el tamaño de los botones */
+    padding: 10px 12px; /* Acomoda el padding para pantallas más pequeñas */
+  }
+
+  .contact-card {
+    max-width: 95%; /* Ocupa más espacio en pantallas pequeñas */
+    padding: 15px; /* Reduce el padding */
+  }
+
+  .contact-card h2 {
+    font-size: 20px; /* Título más pequeño en pantallas muy pequeñas */
+  }
+
+  .contact-card p {
+    font-size: 12px; /* Texto más pequeño en pantallas muy pequeñas */
   }
 }
