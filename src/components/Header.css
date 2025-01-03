@@ -1,11 +1,11 @@
 /* Estilos generales para el header */
 header {
-  background-color: #3e5c5b;
+  background-color: rgb(17, 17, 92);
   padding: 20px 0;
   display: flex;
   justify-content: space-between; /* Asegura que el logo y los botones se alineen correctamente */
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.452);
   position: relative; /* Esto es importante para el posicionamiento del menú hamburguesa */
 }
 
@@ -24,7 +24,7 @@ header {
 
 /* Efecto hover para el logo */
 .logo:hover {
-  color: #7db1b1; /* Azul verdoso para el hover */
+  color: #1bafaf; /* Azul verdoso para el hover */
   transform: scale(1.1);
   
 }

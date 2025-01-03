@@ -1,0 +1,171 @@
+/* Estilo general */
+.modern-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); /* Fondo moderno con gradiente */
+  font-family: 'Inter', sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Columna de introducción */
+.intro {
+  flex: 1;
+  min-width: 300px;
+  text-align: center; /* Centra el contenido */
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #37F230; /* Amarillo vibrante para destacar */
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+/* Redes sociales centradas */
+.social-links-centered {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaciado entre botones */
+}
+
+.social {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 5px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social.linkedin {
+  background: #0a66c2;
+}
+
+.social.instagram {
+  background: #e4405f;
+}
+
+.social.github {
+  background: #333;
+}
+.social:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+/* Contenedor de habilidades */
+.skills {
+  margin-top: 40px;
+}
+
+/* Grid de habilidades */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste automático */
+  gap: 20px;
+}
+
+/* Estilo de cada habilidad */
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 20px;
+  background: linear-gradient(145deg, #1e293b, #334155); /* Fondo con gradiente oscuro */
+  color: #e2e8f0; /* Texto claro */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.1); /* Efecto neumorfismo */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Interacción al pasar el ratón */
+.skill:hover {
+  transform: translateY(-5px); /* Efecto de elevación */
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.4), -4px -8px 12px rgba(255, 255, 255, 0.15); /* Sombras más profundas */
+  background: linear-gradient(145deg, #334155, #1e293b); /* Gradiente invertido */
+}
+
+/* Responsive: para pantallas pequeñas */
+@media (max-width: 768px) {
+  .skill {
+    font-size: 1rem;
+    padding: 15px;
+  }
+}
+
+/* Columna de habilidades */
+.skills {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.skill {
+  font-size: 1.1rem;
+  padding: 15px;
+  text-align: center;
+  background: #89f27996; /* Fondo translúcido */
+  border-radius: 12px;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skill:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-5px);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .skills-title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}

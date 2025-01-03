@@ -27,7 +27,7 @@ const Header = () => {
     <header>
       {/* Logo */}
       <div className="logo" onClick={() => scrollToSection('about')}>
-        Quiroga C
+        WWS
       </div>
       
       {/* Menú hamburguesa */}
