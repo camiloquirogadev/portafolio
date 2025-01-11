@@ -19,7 +19,7 @@ const Header = () => {
     }
   };
   const downloadCV = () => {
-    const driveLink = "https://drive.google.com/file/d/1CD7ftHtmDAP2CdA0OjQ_09hNrCXA8DYk/view?usp=sharing";
+    const driveLink = "https://drive.google.com/file/d/1hmTVZKg-I6NezIvREm394djCoxwTyJCH/view?usp=sharing";
     window.open(driveLink, "_blank");
   };
 
