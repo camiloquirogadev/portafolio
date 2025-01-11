@@ -1,5 +1,5 @@
 import React from 'react';
-import './services.css'; // Asegúrate de tener este archivo CSS
+import './Services.css'; // Asegúrate de tener este archivo CSS
 
 const Services = () => {
   return (

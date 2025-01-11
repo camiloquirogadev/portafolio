@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './header.css'; // Importa los estilos
+import './Header.css'; // Importa los estilos
 /*import DarkModeToggle from './DarkModeToggle';*/
 
 const Header = () => {
