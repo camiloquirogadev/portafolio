@@ -1,5 +1,6 @@
 {
   "name": "portafolio",
+  "homepage": "https://camiloquirogadev.github.io/portafolio/",
   "version": "1.0.0",
   "description": "Este es el repositorio de mi portafolio personal. Mi portafolio está diseñado para ser una presentación sencilla pero profesional.",
   "main": "index.js",
