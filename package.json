@@ -41,10 +41,10 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://camiloquirogadev.github.io/portafolio/",
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
-  },
+    "homepage": "https://camiloquirogadev.github.io/portafolio/",
+    "devDependencies": {
+      "gh-pages": "^6.3.0"
+    },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "keywords": [],
