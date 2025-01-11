@@ -1,6 +1,6 @@
 # Portafolio de Camilo Quiroga
 
-Este es el repositorio de mi portafolio personal, donde muestro una colección de proyectos y habilidades relacionadas con el desarrollo web. Mi portafolio está diseñado para ser una presentación sencilla pero profesional, con un enfoque en los proyectos más destacados y mis competencias como desarrollador.
+Este es el repositorio de mi portafolio personal. Mi portafolio está diseñado para ser una presentación sencilla pero profesional.
 
 ## Tecnologías Utilizadas
 
