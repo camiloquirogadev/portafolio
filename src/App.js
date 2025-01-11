@@ -10,7 +10,7 @@ import ModernAbout from './components/ModernAbout';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" basename="/portafolio">
       <Header />  
       <ModernAbout />
       <Services />
