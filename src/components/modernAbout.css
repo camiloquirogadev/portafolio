@@ -29,10 +29,12 @@
   font-weight: bold;
   margin-bottom: 20px;
   line-height: 1.2;
+  text-shadow: #1e293b 2px 2px 0; /* Sombra de texto */
 }
 
 .highlight {
-  color: #37F230; /* Amarillo vibrante para destacar */
+  color: #13823c; 
+
 }
 
 .description {
