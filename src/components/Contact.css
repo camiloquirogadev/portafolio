@@ -73,7 +73,8 @@
 
 /* Botón de WhatsApp */
 .contact-button.whatsapp {
-  background-color: #13823c; /* Verde WhatsApp */
+  background-color: #13823c;
+  color: #ffffff; 
 }
 
 .contact-button.whatsapp:hover {
