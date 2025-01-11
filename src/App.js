@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom'; // Importar Router
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Importar Router y Routes
 import Header from './components/Header';
 import Contact from './components/Contact'; // Importar Contact
 import Footer from './components/Footer';
@@ -12,9 +12,14 @@ function App() {
     <Router basename="/portafolio"> 
       <div className="App">
         <Header />  
-        <ModernAbout />
-        <Services />
-        <Contact />
+        
+        {/* Definir las rutas */}
+        <Routes>
+          <Route path="/" element={<ModernAbout />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+
         <Footer />
       </div>
     </Router>
