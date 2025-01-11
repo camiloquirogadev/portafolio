@@ -1,23 +1,23 @@
-// App.js
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom'; // Importar Router
 import Header from './components/Header';
-import Contact from './components/Contact';  // Importar Contact
+import Contact from './components/Contact'; // Importar Contact
 import Footer from './components/Footer';
 import './App.css'; // Estilos
 import Services from './components/Services';
 import ModernAbout from './components/ModernAbout';
 
-
 function App() {
   return (
-    <div className="App" basename="/portafolio">
-      <Header />  
-      <ModernAbout />
-      <Services />
-      <Contact />
-      <Footer />
-
-    </div>
+    <Router basename="/portafolio"> {/* Configura el basename */}
+      <div className="App">
+        <Header />  
+        <ModernAbout />
+        <Services />
+        <Contact />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
