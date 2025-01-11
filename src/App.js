@@ -9,11 +9,11 @@ import ModernAbout from './components/ModernAbout';
 
 function App() {
   return (
-    <Router basename="/portafolio"> 
+    <Router basename="/portafolio">
       <div className="App">
-        <Header />  
+        <Header />
         
-        {/* Definir las rutas */}
+        {/* Definir las rutas dentro de <Routes> */}
         <Routes>
           <Route path="/" element={<ModernAbout />} />
           <Route path="/services" element={<Services />} />
