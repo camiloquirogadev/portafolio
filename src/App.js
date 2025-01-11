@@ -9,7 +9,7 @@ import ModernAbout from './components/ModernAbout';
 
 function App() {
   return (
-    <Router basename="/portafolio"> {/* Configura el basename */}
+    <Router basename="/portafolio"> 
       <div className="App">
         <Header />  
         <ModernAbout />
