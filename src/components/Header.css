@@ -8,17 +8,28 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.452);
   position: relative; /* Esto es importante para el posicionamiento del menú hamburguesa */
 }
-
-/* Estilo para el nombre del logo (Portafolio) */
 .logo {
+  text-align: center; /* Centra el contenido dentro del div */
+}
+
+.logo img {
+  width: 90px; /* Ajusta el ancho según tu imagen */
+  height: auto; /* Mantiene las proporciones */
+  object-fit: contain; /* Evita que la imagen se distorsione */
+}
+.logo img:hover {
+  transform: scale(1.1);
+}
+/* Estilo para el nombre del logo (Portafolio) */
+/*.logo {
   font-size: 32px; /* Tamaño grande para hacerlo visible */
-  color: #ecf0f1; /* Blanco suave */
-  font-weight: bold; /* Negrita para resaltar */
-  letter-spacing: 2px; /* Espaciado entre letras para un toque moderno */
-  text-transform: uppercase; /* Mayúsculas para mayor impacto */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave para darle profundidad */
-  cursor: pointer; /* Para que se pueda hacer clic si es necesario */
-  transition: color 0.3s ease, transform 0.3s ease;
+/*  color: #ecf0f1; /* Blanco suave */
+ /* font-weight: bold; /* Negrita para resaltar */
+ /* letter-spacing: 2px; /* Espaciado entre letras para un toque moderno */
+ /* text-transform: uppercase; /* Mayúsculas para mayor impacto */
+ /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave para darle profundidad */
+ /* cursor: pointer; /* Para que se pueda hacer clic si es necesario */
+ /* transition: color 0.3s ease, transform 0.3s ease;
   margin-left: 25px;
 }
 
